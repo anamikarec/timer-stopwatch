@@ -38,10 +38,10 @@ export default function Stopwatch() {
 
   return (
     <div className="App">
-      <h4>Timer</h4>
-      <input type="number" placeholder="00h 00m 00s" onChange={handleChange} value={state} style={{border: '1px solid white', borderBottom:"1px solid black" ,focused: false}}/>
-      <br /><br /><button onClick={startTimer}>START</button>{"  "}
-      <button onClick={resetTimer}>RESET</button>
+      <h2>Timer</h2>
+      <input type="number" placeholder="00h 00m 00s" onChange={handleChange} value={state} style={{border: '1px solid white', borderBottom:"1px solid blue" ,focused: false,color:"blue"}}/>
+      <br /><br /><button style={{backgroundColor:"green",color:"white",borderBottom:"1px solid blue",padding:"5px",borderRadius:"5px"}} onClick={startTimer}>START</button>{"  "}
+      <button style={{backgroundColor:"green",color:"white",borderBottom:"1px solid blue",padding:"5px",borderRadius:"5px"}} onClick={resetTimer}>RESET</button>
     </div>
   );
 }

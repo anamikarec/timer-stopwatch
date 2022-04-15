@@ -28,11 +28,11 @@ export default function Stopwatch() {
 
   return (
     <div className="App">
-      <h4>Stop Watch</h4>
+      <h2>Stop Watch</h2>
       <h3>{state}</h3>
-      <button onClick={startTimer}>START</button>
-      <button onClick={pauseTimer}>PAUSE</button>
-      <button onClick={resetTimer}>RESET</button>
+      <button style={{backgroundColor:"green",color:"white",borderBottom:"1px solid blue",padding:"5px",borderRadius:"5px"}} onClick={startTimer}>START</button>
+      <button style={{backgroundColor:"green",color:"white",borderBottom:"1px solid blue",padding:"5px",borderRadius:"5px"}} onClick={pauseTimer}>PAUSE</button>
+      <button style={{backgroundColor:"green",color:"white",borderBottom:"1px solid blue",padding:"5px",borderRadius:"5px"}} onClick={resetTimer}>RESET</button>
     </div>
   );
 }
